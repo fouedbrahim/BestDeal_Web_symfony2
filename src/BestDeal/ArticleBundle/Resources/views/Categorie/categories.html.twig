@@ -1,0 +1,11 @@
+{% extends "::single.html.twig" %}
+{% block categories %}   
+    <center><h1> Categories </h1></center>
+        {% for categorie in categories %}
+
+
+        <select class="dropdown" tabindex="8" data-settings='{"wrapperClass":"metro"}'>
+            <option value="1"><a href="{{path("best_deal_categories")}}"> {{categorie.nomCategorie}}</a>   </option>
+    </select>
+{% endfor %}
+{% endblock %}

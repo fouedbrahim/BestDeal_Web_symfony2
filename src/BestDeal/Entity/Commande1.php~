@@ -1,0 +1,53 @@
+<?php
+
+namespace BestDeal\AdminPrestBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Commande1
+ *
+ * @ORM\Table(name="commande1")
+ * @ORM\Entity
+ */
+class Commande1
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id_commande", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $idCommande;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id_produit", type="integer", nullable=false)
+     */
+    private $idProduit;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id_client", type="integer", nullable=false)
+     */
+    private $idClient;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="qte", type="integer", nullable=false)
+     */
+    private $qte;
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="date_res", type="datetime", nullable=false)
+     */
+    private $dateRes;
+
+
+}

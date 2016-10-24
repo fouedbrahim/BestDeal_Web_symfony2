@@ -1,0 +1,12 @@
+{%extends "::single.html.twig"%}
+{% block infos %}
+<div>
+    <!--le contenu qui affiche mes produits-->
+     <center><h1> Deal </h1></center>
+
+     <a href="{{path("best_deal_panier",{"id":deal.idDeal})}}">
+         {{deal.idDeal}} {{deal.nomDeal}}
+     </a>           
+
+</div>
+{% endblock %}

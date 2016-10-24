@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="BestDeal\ReclamationBundle\Entity\Produit" table="produit">
+    <indexes>
+      <index name="FK_produit_categorie" columns="id_cat"/>
+    </indexes>
+    <id name="id" type="integer" column="id_produit">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="nomProduit" type="string" column="nom_produit" length="45" nullable="false"/>
+    <field name="categorie" type="string" column="categorie" length="45" nullable="true"/>
+    <field name="prixPrimaire" type="float" column="prix_primaire" precision="10" scale="0" nullable="true"/>
+    <field name="prixSolde" type="float" column="prix_solde" precision="10" scale="0" nullable="true"/>
+    <field name="qteProduit" type="float" column="qte_produit" precision="10" scale="0" nullable="true"/>
+    <field name="datePromotion" type="date" column="date_promotion" nullable="true"/>
+    <field name="afficheProduit" type="string" column="affiche_produit" length="70" nullable="true"/>
+    <field name="videoPublicitaire" type="string" column="video_publicitaire" length="45" nullable="true"/>
+    <field name="idPrestataire" type="string" column="id_prestataire" length="45" nullable="false"/>
+    <field name="description" type="string" column="description" length="4000" nullable="false"/>
+    <many-to-one field="idCat" target-entity="Categorie">
+      <join-columns>
+        <join-column name="id_cat" referenced-column-name="id_categorie"/>
+      </join-columns>
+    </many-to-one>
+  </entity>
+</doctrine-mapping>

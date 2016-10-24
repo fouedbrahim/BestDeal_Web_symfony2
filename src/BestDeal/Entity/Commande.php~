@@ -1,0 +1,59 @@
+<?php
+
+namespace BestDeal\MainBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Commande
+ *
+ * @ORM\Table(name="commande", indexes={@ORM\Index(name="FK_commande_1", columns={"id_produit"}), @ORM\Index(name="FK_commande_2", columns={"id_client"})})
+ * @ORM\Entity
+ */
+class Commande
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id_commande", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $idCommande;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="qte", type="integer", nullable=false)
+     */
+    private $qte;
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="date_res", type="datetime", nullable=true)
+     */
+    private $dateRes;
+
+    /**
+     * @var \Produit
+     *
+     * @ORM\ManyToOne(targetEntity="Produit")
+     * @ORM\JoinColumns({
+     *   @ORM\JoinColumn(name="id_produit", referencedColumnName="id_produit")
+     * })
+     */
+    private $idProduit;
+
+    /**
+     * @var \Client
+     *
+     * @ORM\ManyToOne(targetEntity="Client")
+     * @ORM\JoinColumns({
+     *   @ORM\JoinColumn(name="id_client", referencedColumnName="id")
+     * })
+     */
+    private $idClient;
+
+
+}

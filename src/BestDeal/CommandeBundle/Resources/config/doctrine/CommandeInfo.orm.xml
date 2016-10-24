@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="BestDeal\MainBundle\Entity\CommandeInfo" table="commande_info">
+    <indexes>
+      <index name="id_produit" columns="id_produit"/>
+      <index name="id_commande" columns="id_commande"/>
+    </indexes>
+    <id name="id" type="integer" column="id">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="qte" type="integer" column="qte" nullable="true"/>
+    <many-to-one field="idProduit" target-entity="Produit">
+      <join-columns>
+        <join-column name="id_produit" referenced-column-name="id_produit"/>
+      </join-columns>
+    </many-to-one>
+    <many-to-one field="idCommande" target-entity="Commande">
+      <join-columns>
+        <join-column name="id_commande" referenced-column-name="id_commande"/>
+      </join-columns>
+    </many-to-one>
+  </entity>
+</doctrine-mapping>

@@ -1,0 +1,30 @@
+commande:
+    pattern:  /
+    defaults: { _controller: "BestDealCommandeBundle:Commande:index" }
+
+commande_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "BestDealCommandeBundle:Commande:show" }
+
+commande_new:
+    pattern:  /new
+    defaults: { _controller: "BestDealCommandeBundle:Commande:new" }
+
+commande_create:
+    pattern:  /create
+    defaults: { _controller: "BestDealCommandeBundle:Commande:create" }
+    requirements: { _method: post }
+
+commande_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "BestDealCommandeBundle:Commande:edit" }
+
+commande_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "BestDealCommandeBundle:Commande:update" }
+    requirements: { _method: post|put }
+
+commande_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "BestDealCommandeBundle:Commande:delete" }
+    requirements: { _method: post|delete }

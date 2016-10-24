@@ -1,0 +1,30 @@
+livraison:
+    pattern:  /
+    defaults: { _controller: "BestDealMainBundle:Livraison:index" }
+
+livraison_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "BestDealMainBundle:Livraison:show" }
+
+livraison_new:
+    pattern:  /new
+    defaults: { _controller: "BestDealMainBundle:Livraison:new" }
+
+livraison_create:
+    pattern:  /create
+    defaults: { _controller: "BestDealMainBundle:Livraison:create" }
+    requirements: { _method: post }
+
+livraison_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "BestDealMainBundle:Livraison:edit" }
+
+livraison_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "BestDealMainBundle:Livraison:update" }
+    requirements: { _method: post|put }
+
+livraison_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "BestDealMainBundle:Livraison:delete" }
+    requirements: { _method: post|delete }

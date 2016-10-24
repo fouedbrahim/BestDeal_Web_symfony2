@@ -1,0 +1,9 @@
+{%extends "::single.html.twig"  %}
+{% block rechCat %}
+    <center><h1> Deal </h1></center>
+
+    <a href="{{path("best_deal_rechercheCat",{"id":deal.idCat})}}">   
+        {{deal.idDeal}} {{deal.nomDeal}}
+    </a>   
+{% endblock %}
+

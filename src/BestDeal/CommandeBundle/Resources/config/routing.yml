@@ -1,0 +1,18 @@
+best_deal_commande_homepage:
+    pattern:  /hello/{name}
+    defaults: { _controller: BestDealCommandeBundle:Default:index }
+best_deal_client:
+    resource: "@BestDealCommandeBundle/Resources/config/routing/client.yml"
+    prefix:   /client
+best_deal_produit:
+    resource: "@BestDealCommandeBundle/Resources/config/routing/produit.yml"
+    prefix:   /produit
+best_deal_commande:
+    resource: "@BestDealCommandeBundle/Resources/config/routing/commande.yml"
+    prefix:   /commande
+best_deal_commandeInfo:
+    resource: "@BestDealCommandeBundle/Resources/config/routing/commandeInfo.yml"
+    prefix:   /commandeInfo
+best_deal_tempproduit:
+    resource: "@BestDealCommandeBundle/Resources/config/routing/tempproduit.yml"
+    prefix:   /tempproduit

@@ -1,0 +1,17 @@
+{%extends "BestDealClientBundle::layout.html.twig"  %}
+{%block inscription %}
+<div class="register_account">
+          	<div class="wrap">
+    	     <h4 class="title" >Inscription</h4>
+
+<form action="" method="POST" {{ form_enctype(Form)}}>
+    <div class="col_1_of_4 span_1_of_3">
+{{form_widget(Form)}}
+    <input type="submit" class="grey"/>
+     <div class="clear"></div>
+
+</div>
+        </form>
+                </div>
+  </div>
+{%endblock%}

@@ -1,0 +1,6 @@
+best_deal_reclamation_homepage:
+    pattern:  /hello/{name}
+    defaults: { _controller: BestDealReclamationBundle:Default:index }
+reclamation:
+        resource: "@BestDealReclamationBundle/Resources/config/routing/reclamation.yml"
+        prefix:   /reclamation    

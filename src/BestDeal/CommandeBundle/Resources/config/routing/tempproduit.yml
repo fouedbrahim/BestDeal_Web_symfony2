@@ -1,0 +1,36 @@
+tempproduit:
+    pattern:  /
+    defaults: { _controller: "BestDealCommandeBundle:Tempproduit:index" }
+
+tempproduit_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "BestDealCommandeBundle:Tempproduit:show" }
+
+tempproduit_new:
+    pattern:  /new
+    defaults: { _controller: "BestDealCommandeBundle:Tempproduit:new" }
+
+tempproduit_create:
+    pattern:  /create
+    defaults: { _controller: "BestDealCommandeBundle:Tempproduit:create" }
+    requirements: { _method: post }
+
+tempproduit_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "BestDealCommandeBundle:Tempproduit:edit" }
+
+tempproduit_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "BestDealCommandeBundle:Tempproduit:update" }
+    requirements: { _method: post|put }
+
+tempproduit_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "BestDealCommandeBundle:Tempproduit:delete" }
+    requirements: { _method: post|delete }
+tempproduit_ajoutTemp:
+    pattern:  /{id}/ajout
+    defaults: { _controller: "BestDealCommandeBundle:Tempproduit:ajout" }
+tempproduit_confirmer:
+    pattern:  /confirmer
+    defaults: { _controller: "BestDealCommandeBundle:Tempproduit:confirmer" }

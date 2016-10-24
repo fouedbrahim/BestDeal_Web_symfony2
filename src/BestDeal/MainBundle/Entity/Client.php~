@@ -1,0 +1,109 @@
+<?php
+
+namespace BestDeal\MainBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Client
+ *
+ * @ORM\Table(name="client")
+ * @ORM\Entity
+ */
+class Client
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="nom", type="string", length=45, nullable=true)
+     */
+    private $nom;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="prenom", type="string", length=45, nullable=true)
+     */
+    private $prenom;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="email", type="string", length=45, nullable=true)
+     */
+    private $email;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="tel", type="integer", nullable=true)
+     */
+    private $tel;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="datedenaissance", type="string", length=45, nullable=true)
+     */
+    private $datedenaissance;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="sexe", type="string", length=1, nullable=true)
+     */
+    private $sexe;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="adresse", type="string", length=45, nullable=true)
+     */
+    private $adresse;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="pseudo", type="string", length=45, nullable=true)
+     */
+    private $pseudo;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="mdp", type="string", length=45, nullable=true)
+     */
+    private $mdp;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="photo", type="string", length=90, nullable=true)
+     */
+    private $photo;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id_rec", type="integer", nullable=true)
+     */
+    private $idRec;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id_com", type="integer", nullable=true)
+     */
+    private $idCom;
+
+
+}

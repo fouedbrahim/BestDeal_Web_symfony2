@@ -1,0 +1,7 @@
+parameters:
+#    best_deal_article.example.class: BestDeal\ArticleBundle\Example
+
+services:
+#    best_deal_article.example:
+#        class: %best_deal_article.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

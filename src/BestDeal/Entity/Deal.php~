@@ -1,0 +1,74 @@
+<?php
+
+namespace BestDeal\MainBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Deal
+ *
+ * @ORM\Table(name="deal")
+ * @ORM\Entity
+ */
+class Deal
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id_deal", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $idDeal;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="nom_deal", type="string", length=45, nullable=false)
+     */
+    private $nomDeal;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="categorie", type="string", length=45, nullable=true)
+     */
+    private $categorie;
+
+    /**
+     * @var float
+     *
+     * @ORM\Column(name="prix_primaire", type="float", precision=10, scale=0, nullable=true)
+     */
+    private $prixPrimaire;
+
+    /**
+     * @var float
+     *
+     * @ORM\Column(name="prix_solde", type="float", precision=10, scale=0, nullable=true)
+     */
+    private $prixSolde;
+
+    /**
+     * @var float
+     *
+     * @ORM\Column(name="qte_deal", type="float", precision=10, scale=0, nullable=true)
+     */
+    private $qteDeal;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="date_promotion", type="string", length=45, nullable=true)
+     */
+    private $datePromotion;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="affiche_deal", type="string", length=200, nullable=true)
+     */
+    private $afficheDeal;
+
+
+}

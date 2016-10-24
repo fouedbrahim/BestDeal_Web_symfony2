@@ -1,0 +1,36 @@
+{% extends "BestDealMainBundle::layout.html.twig" %}
+
+{% trans_default_domain 'FOSUserBundle' %}
+
+{% block content %}
+        <div class="login">
+          	<div class="wrap">
+                    <div class="col_1_of_login span_1_of_login">
+                        <div class="login-title">
+{% if error %}
+    <div>{{ error|trans }}</div>
+{% endif %}
+<div id="loginbox" class="loginbox">
+<form action="{{ path("fos_user_security_check") }}" method="post">
+    <input type="hidden" name="_csrf_token" value="{{ csrf_token }}" />
+    <fieldset class="input">
+<p id="login-form-username">
+    <label for="modlgn_username">Login</label>
+    <input type="text"  id="modlgn_username" name="_username" value="{{ last_username }}" required="required" />
+</p>
+    <label for="password">Mot de Passe </label>
+    <input type="password" id="password" name="_password" required="required" />
+
+    <input type="checkbox" id="remember_me" name="_remember_me" value="on" />
+    <label for="remember_me">remember_me</label>
+
+    <input type="submit" id="_submit" name="_submit" value="Connexion" />
+     </fieldset>
+</form>
+     </div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+        </div>
+{% endblock content %}

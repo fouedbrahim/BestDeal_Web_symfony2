@@ -1,0 +1,74 @@
+<?php
+
+namespace BestDeal\MainBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Prestataire
+ *
+ * @ORM\Table(name="prestataire")
+ * @ORM\Entity
+ */
+class Prestataire
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id_prestataire", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $idPrestataire;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="nom", type="string", length=45, nullable=false)
+     */
+    private $nom;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="prenom", type="string", length=45, nullable=false)
+     */
+    private $prenom;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="email", type="string", length=45, nullable=false)
+     */
+    private $email;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="tel", type="string", length=45, nullable=false)
+     */
+    private $tel;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="adresse", type="string", length=45, nullable=false)
+     */
+    private $adresse;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="pseudo", type="string", length=45, nullable=false)
+     */
+    private $pseudo;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="mdp", type="string", length=45, nullable=false)
+     */
+    private $mdp;
+
+
+}

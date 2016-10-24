@@ -1,0 +1,35 @@
+{% block recherche %}
+<form action="" method="POST">
+    Recherche : <input name="search" type="text" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}">
+    <input type="submit" value="Rechercher" id="submit" name="submit"/> 
+</form>
+{% endblock %}
+				
+{% block motCle %}
+<center><h1>Liste des Deals </h1></center>
+<center><table border="2">
+    <tr>
+        <th>Nom_Deal</th>
+        <th>Categorie</th>
+        <th>Prix_Primaire</th>
+        <th>Prix_Solde</th>
+        <th>Quantite_Deal</th>
+        <th>Date_Promotion</th>
+        <th>Description</th>
+        
+        
+    </tr>
+    {% for  deal in Deals %}
+     <tr>   
+ <td>{{deal.nomDeal}}</td>
+ <td>{{deal.categorie}}</td>
+ <td>{{deal.prixPrimaire}}</td>
+ <td>{{deal.prixSolde}}</td>
+ <td>{{deal.qteDeal}}</td>
+ <td>{{deal.datePromotion}}</td>
+ <td>{{deal.description}}</td>
+   </tr>
+    {% endfor %}     
+</table>
+
+{% endblock %}

@@ -1,0 +1,24 @@
+ <div id="slideshow" class="uh_grey_with_glare">
+			<div class="bgback"></div>
+			<div class="carousel-container">
+                              
+				<div id="icarousel">
+                                    {% for  deal in deals %}
+				<a class="slide" href="{{path('best_deal_detail',{'id':deal.idProduit})}}" target="{{path('best_deal_panier',{'id':deal.idProduit})}}">
+                                  
+                                    <img  src="{{ asset(deal.afficheProduit)}}" width="750" height="273" />
+                                    
+                                    <h5>
+                                    <span>{{deal.nomProduit}}</span>
+                                       
+                                    </h5>
+                                </a>	
+                                  {%endfor%}    
+				</div>
+                          
+			</div>
+			<div class="timers"></div>
+        <div class="slidePrev"><span></span></div>
+        <div class="slideNext"><span></span></div>
+         
+            </div>

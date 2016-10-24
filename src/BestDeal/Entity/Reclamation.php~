@@ -1,0 +1,46 @@
+<?php
+
+namespace BestDeal\MainBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Reclamation
+ *
+ * @ORM\Table(name="reclamation")
+ * @ORM\Entity
+ */
+class Reclamation
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="type_reclamation", type="string", length=45, nullable=false)
+     */
+    private $typeReclamation;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="date_reclamation", type="string", length=45, nullable=false)
+     */
+    private $dateReclamation;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="description_reclamation", type="string", length=300, nullable=false)
+     */
+    private $descriptionReclamation;
+
+
+}

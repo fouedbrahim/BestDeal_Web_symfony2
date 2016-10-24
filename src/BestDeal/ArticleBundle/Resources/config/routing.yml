@@ -1,0 +1,21 @@
+best_deal_article_homepage:
+    pattern:  /hello/{name}
+    defaults: { _controller: BestDealArticleBundle:Default:index }
+best_deal_detail:
+    pattern:  /detailDeal/{id}
+    defaults: { _controller: BestDealArticleBundle:Deal:detail }
+best_deal_categories:
+    pattern:  /categoriesDeal
+    defaults: { _controller: BestDealArticleBundle:Categorie:categories }
+best_deal_rechercheListe_Categorie:
+    pattern:  /rechercheListe
+    defaults: { _controller: BestDealArticleBundle:Deal:rechercheListe }
+best_deal_panier:
+    pattern:  /infos/{id}
+    defaults: { _controller: BestDealArticleBundle:Deal:infos }
+best_deal_desc:
+    pattern:  /descriptionDeal/{id}
+    defaults: { _controller: BestDealArticleBundle:Deal:descriptionDeal }
+best_deal_rechercheCat:
+    pattern:  /rechercheCat/{id}
+    defaults: { _controller: BestDealArticleBundle:Deal:rechercheCat }

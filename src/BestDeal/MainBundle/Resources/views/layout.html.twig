@@ -1,0 +1,474 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Best Deal</title>
+{% include 'BestDealMainBundle:Default:cssjs.html.twig' %}
+{%block js%}{%endblock%}
+</head>
+<body>
+ <div class="header-top">
+	   <div class="wrap"> 
+			  <div class="header-top-left">
+			  	   <div class="box">
+
+   				    </div>
+   				    <div class="box1">
+   				    </div>
+   				    <div class="clear"></div>
+   			 </div>
+			 <div class="cssmenu">
+                             {%block menud%}
+				<ul>
+					<li class="active"><a href="login.html">Account</a></li> |
+					<li><a href="checkout.html">Wishlist</a></li> |
+					<li><a href="checkout.html">Checkout</a></li> |
+					<li><a href="login.html">Log In</a></li> |
+					<li><a href="register.html">Sign Up</a></li>
+				</ul>
+                             {%endblock%}
+			</div>
+
+	</div>
+	<div class="header-bottom">
+	    <div class="wrap">
+			<div class="header-bottom-left">
+				<div class="logo">
+					<img src="images/best.png" alt=""/><img src="images/deal.png" alt=""/>
+				</div>
+				<div class="menu">
+	            <ul class="megamenu skyblue">
+			<li class="active grid"><a href="http://localhost/BestDeal_Web/web/app_dev.php/">Home</a></li>
+			<li><a class="color4" href="#">categories</a>
+				<div class="megapanel">
+					<div class="row">
+						<div class="col1">
+							<div class="h_nav">
+								<h4>Contact Lenses</h4>
+								<ul>
+									<li>Gastronomie</li>
+									<li>Pret à porter</li>
+									<li> Produit Cosmétique</li>
+									<li>Technologie</li>
+								</ul>	
+							</div>							
+						</div>
+						<div class="col1">
+							<div class="h_nav">
+								<h4>Sun Glasses</h4>
+								<ul>
+									<li><a href="womens.html">Heart-Shaped</a></li>
+									<li><a href="womens.html">Square-Shaped</a></li>
+									<li><a href="womens.html">Round-Shaped</a></li>
+									<li><a href="womens.html">Oval-Shaped</a></li>
+								</ul>	
+							</div>							
+						</div>
+						<div class="col1">
+							<div class="h_nav">
+								<h4>Eye Glasses</h4>
+								<ul>
+									<li><a href="womens.html">Anti Reflective</a></li>
+									<li><a href="womens.html">Aspheric</a></li>
+									<li><a href="womens.html">Bifocal</a></li>
+									<li><a href="womens.html">Hi-index</a></li>
+									<li><a href="womens.html">Progressive</a></li>
+								</ul>	
+							</div>												
+						</div>
+					  </div>
+					</div>
+				</li>				
+				<li><a class="color5" href="#">Men</a>
+				<div class="megapanel">
+					<div class="col1">
+							<div class="h_nav">
+								<h4>Contact Lenses</h4>
+								<ul>
+									<li><a href="mens.html">Daily-wear soft lenses</a></li>
+									<li><a href="mens.html">Extended-wear</a></li>
+									<li><a href="mens.html">Lorem ipsum </a></li>
+									<li><a href="mens.html">Planned replacement</a></li>
+								</ul>	
+							</div>							
+						</div>
+						<div class="col1">
+							<div class="h_nav">
+								<h4>Sun Glasses</h4>
+								<ul>
+									<li><a href="mens.html">Heart-Shaped</a></li>
+									<li><a href="mens.html">Square-Shaped</a></li>
+									<li><a href="mens.html">Round-Shaped</a></li>
+									<li><a href="mens.html">Oval-Shaped</a></li>
+								</ul>	
+							</div>							
+						</div>
+						<div class="col1">
+							<div class="h_nav">
+								<h4>Eye Glasses</h4>
+								<ul>
+									<li><a href="mens.html">Anti Reflective</a></li>
+									<li><a href="mens.html">Aspheric</a></li>
+									<li><a href="mens.html">Bifocal</a></li>
+									<li><a href="mens.html">Hi-index</a></li>
+									<li><a href="mens.html">Progressive</a></li>
+								</ul>	
+							</div>												
+						</div>
+					</div>
+				</li>
+				<li><a class="color6" href="other.html">Other</a></li>
+				<li><a class="color7" href="{{path('map_homepage')}}">Livraison</a></li>
+			</ul>
+			</div>
+		</div>
+	   <div class="header-bottom-right">
+         <div class="search">	  
+				<input type="text" name="s" class="textbox" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}">
+				<input type="submit" value="Subscribe" id="submit" name="submit">
+				<div id="response"> </div>
+		 </div>
+	  <div class="tag-list">
+	    <ul class="icon1 sub-icon1 profile_img">
+			<li><a class="active-icon c1" href="#"> </a>
+				<ul class="sub-icon1 list">
+					<li><h3>sed diam nonummy</h3><a href=""></a></li>
+					<li><p>Lorem ipsum dolor sit amet, consectetuer  <a href="">adipiscing elit, sed diam</a></p></li>
+				</ul>
+			</li>
+		</ul>
+		<ul class="icon1 sub-icon1 profile_img">
+			<li><a class="active-icon c2" href="#"> </a>
+				<ul class="sub-icon1 list">
+					<li><h3>No Products</h3><a href=""></a></li>
+					<li><p>Lorem ipsum dolor sit amet, consectetuer  <a href="">adipiscing elit, sed diam</a></p></li>
+				</ul>
+			</li>
+		</ul>
+              
+              <ul class="last"><li><a href="#">{%block panier%} {%endblock%}</a></li></ul>
+	  </div>
+    </div>
+     <div class="clear"></div>
+     </div>
+	
+  <!-- start slider -->
+  {%block caroussel%}
+    
+  {%endblock%}
+    <!--/slider -->
+
+  
+     {%block content%}
+	
+			{%endblock%}
+   
+     
+                  
+ </div>  
+   
+    <div class="clear"></div>
+
+ </div>
+
+     {%block footer%}     
+		
+   <div class="footer">
+		<div class="footer-top">
+			<div class="wrap">
+			  <div class="section group example">
+				<div class="col_1_of_2 span_1_of_2">
+					<ul class="f-list">
+					  <li><img src="images/2.png"><span class="f-text">Deal a partir de 10 D.T !</span><div class="clear"></div></li>
+					</ul>
+				</div>
+				<div class="col_1_of_2 span_1_of_2">
+					<ul class="f-list">
+					  <li><img src="images/3.png"><span class="f-text">Num Tel : 71 000 000 </span><div class="clear"></div></li>
+					</ul>
+				</div>
+				<div class="clear"></div>
+		      </div>
+			</div>
+		</div>
+		<div class="footer-middle">
+			<div class="wrap">
+			 <div class="section group example">
+			  <div class="col_1_of_f_1 span_1_of_f_1">
+				 <div class="section group example">
+				   <div class="col_1_of_f_2 span_1_of_f_2">
+				      <h3>Facebook</h3>
+						<script>(function(d, s, id) {
+						  var js, fjs = d.getElementsByTagName(s)[0];
+						  if (d.getElementById(id)) return;
+						  js = d.createElement(s); js.id = id;
+						  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+						  fjs.parentNode.insertBefore(js, fjs);
+						}(document, 'script', 'facebook-jssdk'));</script>
+						<div class="like_box">	
+							<div class="fb-like-box" data-href="http://www.facebook.com/w3layouts" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="false" data-show-border="true"></div>
+						</div>
+ 				  </div>
+				 
+				<div class="clear"></div>
+		      </div>
+ 			 </div>
+			 <div class="col_1_of_f_1 span_1_of_f_1">
+			   <div class="section group example">
+				 <div class="col_1_of_f_2 span_1_of_f_2">
+				    <h3>Information</h3>
+						<ul class="f-list1">
+						    <li><a href="#">Duis autem vel eum iriure </a></li>
+				            <li><a href="#">anteposuerit litterarum formas </a></li>
+				            <li><a href="#">Tduis dolore te feugait nulla</a></li>
+				             <li><a href="#">Duis autem vel eum iriure </a></li>
+				            <li><a href="#">anteposuerit litterarum formas </a></li>
+				            <li><a href="#">Tduis dolore te feugait nulla</a></li>
+			         	</ul>
+ 				 </div>
+				 <div class="col_1_of_f_2 span_1_of_f_2">
+				   <h3>Contact us</h3>
+						<div class="company_address">
+					                <p>Esprit</p>
+							   		<p>Chotrana ,Ariana</p>
+							   		<p>TUNISIA</p>
+					   		<p>Num Tel:+216 71 000 000</p>
+					   		<p>Fax: +216 71 000 000</p>
+					 	 	<p>Email: <span>commercial[at]bestdeal.com</span></p>
+					   		
+					   </div>
+					   <div class="social-media">
+						     <ul>
+						       
+						        <li><span class="simptip-position-bottom simptip-movable" data-tooltip="Facebook"><a href="#" target="_blank"> </a></span></li>
+						    </ul>
+					   </div>
+				</div>
+				<div class="clear"></div>
+		    </div>
+		   </div>
+		  <div class="clear"></div>
+		    </div>
+		  </div>
+		</div>
+		<div class="footer-bottom">
+			<div class="wrap">
+	             <div class="copy">
+			        <p>© 2014 Template by <a href="http://w3layouts.com" target="_blank">w3layouts</a></p>
+		         </div>
+				<div class="f-list2">
+				 <ul>
+					<li><a href="contact.html">Contact</a></li> 
+				 </ul>
+			    </div>
+			    <div class="clear"></div>
+		      </div>
+	     </div>
+	</div>
+	<!--carousel -->
+<script type='text/javascript' src='{{ asset('js/icarousel.packed.js')}}'></script>
+<script type='text/javascript' src='{{ asset('js/jquery.mousewheel.js')}}'></script>
+<script type='text/javascript' src='{{ asset('js/jquery.carouFredSel-6.0.4-packed.js')}}'></script>
+<script type='text/javascript' src='{{ asset('js/bootstrap.min.js')}}'></script>
+<script type='text/javascript' src='{{ asset('js/jquery.flexslider-min.js')}}'></script>
+
+<script type="text/javascript">
+						
+					
+						(function($){ 
+							$(window).load(function(){
+								var doc = $(document), 
+									win = $(window), chaser, forch,
+									forchBottom, visible;
+								function shown() { visible = true; }
+								function hidden() { visible = false; }
+								chaser = $('#main_menu ul.sf-menu').clone().hide()
+									.appendTo(document.body)
+									.wrap("<div class='chaser'><div class='container'><div class='row'><div class='span12'></div></div></div></div>");
+								if ( $('#content').length > 0 ) {	
+									forch = $('#content').first();
+									forchBottom = forch.offset().top + 2;
+									hidden();
+									win.on('scroll', function () {
+
+										var top = doc.scrollTop();
+										if (!visible && top > forchBottom) {
+											//chaser.slideDown(300, shown);
+											chaser.fadeIn(300, shown);
+										} else if (visible && top < forchBottom) {
+											//chaser.slideUp(200, hidden);
+											chaser.fadeOut(200, hidden);
+										}
+									});
+								}
+								/* Activate Superfish Menu for Chaser */
+								$('.chaser ul.sf-menu').supersubs({ minWidth: 12, maxWidth: 27, extraWidth: 1}).superfish({delay:250, dropShadows:false, autoArrows:true, speed:300});
+							});
+						})(jQuery);
+						
+						(function($){ 
+							$(document).ready(function(){
+								/* Activate Superfish Menu */
+								var sfDelay = 600;
+								if($('html').hasClass('isie'))
+									sfDelay = 300;
+								$('#main_menu > ul')
+								.supersubs({ 
+									minWidth:    12,   // minimum width of sub-menus in em units 
+									maxWidth:    27,   // maximum width of sub-menus in em units 
+									extraWidth:  1     // extra width can ensure lines don't sometimes turn over 
+								}).superfish({
+									delay:sfDelay,
+									dropShadows:false,
+									autoArrows:true,
+									speed:300
+								});
+							});
+							
+							
+							$(window).resize(function() {
+								$('#main_menu > ul')
+								.supersubs({ 
+									minWidth:    12,   // minimum width of sub-menus in em units 
+									maxWidth:    27,   // maximum width of sub-menus in em units 
+									extraWidth:  1     // extra width can ensure lines don't sometimes turn over 
+								});
+							});
+							
+						})(jQuery);
+													
+								jQuery('.twitter-feed').flexslider({
+									selector: '.tweets > div',
+									controlNav:false,
+									directionNav:false
+								});
+
+							
+							(function($) {
+								$(window).load(function(){
+									$('body').bind('added_to_cart',function (evt,ret) { 
+
+										var mycart = $('#mycartbtn'), // trebuie adaugat id-ul
+											mycartTop = mycart.offset().top;
+											mycartLeft = mycart.offset().left,
+											butonCart = $('.to_cart button.addtocart '),
+											buttonCartHome = $('.add_to_cart_button '),
+											placeholderdiv = $("<div class='popupaddcart'>Item Added to cart!</div>"),
+											$('body').append(placeholderdiv);
+											$(placeholderdiv).hide();
+
+											$(placeholderdiv).fadeIn('slow', 'easeInOutExpo',function(){
+
+												var zn_pos_top = $(this).offset().top,
+													zn_pos_left = $(this).offset().left;
+
+													$(this).css({margin:0,left:zn_pos_left,top:zn_pos_top,position:"absolute"}).delay(800).animate({"top": mycartTop, left:mycartLeft, opacity:1}, 2000, 'easeInOutExpo',function(){
+													$(this).remove();
+
+												});
+
+											})
+									});
+								});
+							})(jQuery);
+						
+						(function($) {
+							var counter = {
+								init: function (d)
+								{
+									jQuery('#Counter').countdown({
+										until: new Date(d),
+										layout: counter.layout(),
+										labels: ['years', 'months', 'weeks', 'days', 'hours', 'min', 'sec'],
+										labels1: ['year', 'month', 'week', 'day', 'hour', 'min', 'sec']
+									});
+								},
+								layout: function ()
+								{
+									return '<li>{dn}<span>{dl}</span></li>' + 
+												'<li>{hnn}<span>{hl}</span></li>' + 
+												'<li>{mnn}<span>{ml}</span></li>' + 
+												'<li>{snn}<span>{sl}</span></li>';
+								}
+							}
+
+							// initialize the counter
+							jQuery(document).ready(function() {
+								counter.init("10/24/2013 01:30");
+							});
+						})(jQuery);
+							
+								jQuery('#icarousel').iCarousel({
+									easing: 'easeInOutQuint',
+									slides: 7,
+									animationSpeed: 700,
+									pauseTime: 5000,
+									perspective: 75,
+									slidesSpace: 300,
+									pauseOnHover: true,
+									direction: "ltr",
+									timer: "Bar",
+									timerOpacity: 0.4,
+									timerDiameter: 220,
+									keyboardNav: true,
+									mouseWheel: true,
+									timerPadding: 3,
+									timerStroke: 4,
+									timerBarStroke: 0,
+									timerColor: "#FFF",
+									timerPosition: "bottom-center",
+									timerX: 15,
+									timerY: 30
+								});
+							;jQuery(window).load(function(){
+						// ** recent works
+						jQuery('.recent_works1').carouFredSel({
+							responsive: true,
+							scroll: 1,
+							auto: false,
+							items: {
+								width: 300,
+								visible: {
+									min: 3,
+									max: 10
+								}
+							},
+							prev	: {	
+								button	: function(){return jQuery(this).closest('.recentwork_carousel').find('.prev');},
+								key		: "left"
+							},
+							next	: { 
+								button	: function(){return jQuery(this).closest('.recentwork_carousel').find('.next');},
+								key		: "right"
+							}
+						});
+						// *** end recent works carousel
+					});jQuery(window).load(function(){
+			// ** partners carousel
+			jQuery('.partners_carousel_trigger').carouFredSel({
+				responsive: true,
+				scroll: 1,
+				auto: false,
+				items: {
+					width: 250,
+					visible: {
+						min: 3,
+						max: 10
+					}
+				},
+				prev	: {	
+					button	: function(){return jQuery(this).closest('.row').find('.prev');},
+					key		: "left"
+				},
+				next	: { 
+					button	: function(){return jQuery(this).closest('.row').find('.next');},
+					key		: "right"
+				}
+			});
+			// *** end partners carousel
+			});</script>
+	
+	<!--end carousel -->
+        {%endblock%}
+</body>
+</html>

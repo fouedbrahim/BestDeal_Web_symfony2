@@ -1,0 +1,375 @@
+<!--A Design by W3layouts
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Infos Deal</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="{{asset('css/style.css')}}" rel="stylesheet" type="text/css" media="all" />
+        <link href="{{asset('css/form.css')}}" rel="stylesheet" type="text/css" media="all" />
+        <link href='http://fonts.googleapis.com/css?family=Exo+2' rel='stylesheet' type='text/css'>
+        <script src="{{asset('js/jquery1.min.js')}}"></script>
+        <!-- start menu -->
+        <link href="{{asset('css/megamenu.css')}}" rel="stylesheet" type="text/css" media="all" />
+        <script type="text/javascript" src="{{asset('js/megamenu.js')}}"></script>
+        <script>$(document).ready(function() {
+                $(".megamenu").megamenu();
+            });</script>
+        <script type="text/javascript" src="{{asset('js/jquery.jscrollpane.min.js')}}"></script>
+        <script type="text/javascript" id="sourcecode">
+            $(function()
+            {
+                $('.scroll-pane').jScrollPane();
+            });
+        </script>
+        <!-- start details -->
+        <script src="{{asset('js/slides.min.jquery.js')}}"></script>
+        <script>
+            $(function() {
+                $('#products').slides({
+                    preload: true,
+                    preloadImage: 'img/loading.gif',
+                    effect: 'slide, fade',
+                    crossfade: true,
+                    slideSpeed: 350,
+                    fadeSpeed: 500,
+                    generateNextPrev: true,
+                    generatePagination: false
+                });
+            });
+        </script>
+        <!-- start zoom -->
+        <link rel="stylesheet" href="{{asset('css/zoome-min.css')}}" />
+        <script type="text/javascript" src="{{asset('js/zoome-e.js')}}"></script>
+        <script type="text/javascript">
+            $(function() {
+                $('#img1,#img2,#img3,#img4').zoome({showZoomState: true, magnifierSize: [250, 250]});
+            });
+        </script>		
+    </head>
+    <body>
+        
+        <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+        <div class="header-top">
+            <div class="wrap"> 
+                <div class="header-top-left">
+                    <div class="box">
+
+                    </div>
+                    <div class="box1">
+
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="cssmenu">
+                    {% include 'BestDealMainBundle:Default:Menu.html.twig' %}
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="wrap">
+                <div class="header-bottom-left">
+                    <div class="logo">
+                        <img src="{{asset('images/best.png')}}" alt=""/><img src="{{asset('images/deal.png')}}" alt=""/>
+                        <img src="{{asset('images/slogant.png')}}" alt=""/>
+                    </div>
+                    <div class="menu">
+                        <ul class="megamenu skyblue">
+                            <li class="active grid"><a href="index.html">Home</a></li>
+                            <li><a class="color4" href="#">CATEGORIE</a>
+                                <div class="megapanel">
+                                    <div class="row">
+                                        <div class="col1">
+                                            <div class="h_nav">
+                                                <h4>Contact Lenses</h4>
+                                                <ul>
+                                                    <li><a href="womens.html">Daily-wear soft lenses</a></li>
+                                                    <li><a href="womens.html">Extended-wear</a></li>
+                                                    <li><a href="womens.html">Lorem ipsum </a></li>
+                                                    <li><a href="womens.html">Planned replacement</a></li>
+                                                </ul>	
+                                            </div>							
+                                        </div>
+                                        <div class="col1">
+                                            <div class="h_nav">
+
+                                            </div>							
+                                        </div>
+                                        <div class="col1">											
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>				
+                            <li><a class="color6" href="other.html">Other</a></li>
+                            <li><a class="color7" href="other.html">Purchase</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="header-bottom-right">
+                    <div class="search">	  
+                        <input type="text" name="s" class="textbox" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {
+                                    this.value = 'Search';
+                                }">
+                        <input type="submit" value="Subscribe" id="submit" name="submit">
+                        <div id="response"> </div>
+                    </div>
+                    <div class="tag-list">
+                        <ul class="icon1 sub-icon1 profile_img">
+                            <li><a class="active-icon c1" href="#"> </a>
+                                <ul class="sub-icon1 list">
+                                    <li><h3>sed diam nonummy</h3><a href=""></a></li>
+                                    <li><p>Lorem ipsum dolor sit amet, consectetuer  <a href="">adipiscing elit, sed diam</a></p></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="icon1 sub-icon1 profile_img">
+                            <li><a class="active-icon c2" href="#"> </a>
+                                <ul class="sub-icon1 list">
+                                    <li><h3>No Products</h3><a href=""></a></li>
+                                    <li><p>Lorem ipsum dolor sit amet, consectetuer  <a href="">adipiscing elit, sed diam</a></p></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="last"><li><a href="#">Cart(0)</a></li></ul>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="mens">    
+            <div class="main">
+                <div class="wrap">
+                    <ul class="breadcrumb breadcrumb__t"> <a class="home" href="{{path('best_deal_main_homepage')}}"> Home</a>  <a href="{{path("best_deal_detail",{"id":deal.idProduit})}}">Infos Deal</a></ul>
+                    <div class="cont span_2_of_3">
+                        <div class="grid images_3_of_2">
+                            <div id="container">
+                                <div id="products_example">
+                                    <div id="products">
+                                        <div class="slides_container">
+                                            <a href="#"><img class="a" id="img1" src="{{asset(deal.afficheProduit)}}" alt=""  rel="{{asset(deal.afficheProduit)}}"/></a>
+                                        {% block listeDeroulante %}{% endblock %}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="desc1 span_3_of_2">
+                            {% block info %}
+                            {% endblock%}                           
+                        </div>
+                        <div class="clear"></div>	
+                        <div class="clients">
+                            <h3 class="m_3">Others Products in the same category</h3>
+                            <ul id="flexiselDemo3">
+                                <a href="#"><img class="a" id="img2" src="{{asset('affiche/galaxys3.jpg')}}" alt="" rel="{{asset('images/galaxy-s3.jpg')}}" /></a>
+
+                                <li><img src="{{asset('images/htc-m8.jpg')}}" alt=""  /><a href="#">Telephone portable</a><p>580 Dt</p></li>
+                                <li><img src="{{asset('images/iphone-5.jpg')}}" /><a href="#">Telephone portable</a><p>16Go 1399Dt</p></li>
+                                <li><img src="{{asset('images/nexus-4.jpg')}}" /><a href="#">Telephone portable</a><p>699 Dt</p></li>
+                                <li><img src="{{asset('images/nokia-lumia.jpg')}}" /><a href="#">Telephone portable</a><p>Série 520 à 449 Dt</p></li>
+                                <li><img src="{{asset('images/qtar-n9500.jpg')}}" /><a href="#">Telephone portable</a><p>266 Dt</p></li>
+                            </ul>
+                            <script type="text/javascript">
+                                $(window).load(function() {
+                                    $("#flexiselDemo1").flexisel();
+                                    $("#flexiselDemo2").flexisel({
+                                        enableResponsiveBreakpoints: true,
+                                        responsiveBreakpoints: {
+                                            portrait: {
+                                                changePoint: 480,
+                                                visibleItems: 1
+                                            },
+                                            landscape: {
+                                                changePoint: 640,
+                                                visibleItems: 2
+                                            },
+                                            tablet: {
+                                                changePoint: 768,
+                                                visibleItems: 3
+                                            }
+                                        }
+                                    });
+
+                                    $("#flexiselDemo3").flexisel({
+                                        visibleItems: 5,
+                                        animationSpeed: 1000,
+                                        autoPlay: true,
+                                        autoPlaySpeed: 3000,
+                                        pauseOnHover: true,
+                                        enableResponsiveBreakpoints: true,
+                                        responsiveBreakpoints: {
+                                            portrait: {
+                                                changePoint: 480,
+                                                visibleItems: 1
+                                            },
+                                            landscape: {
+                                                changePoint: 640,
+                                                visibleItems: 2
+                                            },
+                                            tablet: {
+                                                changePoint: 768,
+                                                visibleItems: 3
+                                            }
+                                        }
+                                    });
+
+                                });
+                            </script>
+                            <script type="text/javascript" src="{{asset('js/jquery.flexisel.js')}}">
+                            </script>
+                        </div>
+                        <div class="toogle">
+                            <h3 class="m_3"><a>Product Details</a></h3>
+                        {% block description %}{% endblock %}
+                    </div>
+                    <br>
+                </div>
+                <div class="rsingle span_1_of_single">
+                    <h5 class="m_1">Categories</h5>
+                    {% block categories %}{% endblock %}
+
+                <section  class="sky-form">
+                    
+                </section>
+                <section  class="sky-form">
+                    <h4>Brand Name</h4>
+                    <div class="row row1 scroll-pane">
+                        <div class="col col-4">
+                            <label class="checkbox"><input type="checkbox" name="checkbox" checked=""><i></i>{{deal.nomProduit}}</label>
+                        </div>
+                        <div class="col col-4">
+                            <!--lorsque je récupére de la base les deals je vais afficher leurs noms à droite dans le brand name-->
+                            <label class="checkbox"><input type="checkbox" name="checkbox"><i></i>htc-m8</label>
+                            <label class="checkbox"><input type="checkbox" name="checkbox"><i></i>iphone-5</label>
+                            <label class="checkbox"><input type="checkbox" name="checkbox"><i></i>iphone-4</label>
+                            <label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Lumia 590</label>
+                            <label class="checkbox"><input type="checkbox" name="checkbox" ><i></i>nexus-4</label>
+                            <label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Star-n9500</label>
+                            <label class="checkbox"><input type="checkbox" name="checkbox"><i></i>galaxy-s3</label>	
+                        </div>
+                    </div>
+                </section>
+                <section  class="sky-form">
+
+
+                </section>
+                <section  class="sky-form">
+
+                </section>
+                <section  class="sky-form">
+
+                </section>
+                <script src="js/jquery.easydropdown.js"></script>
+            </div
+            <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+<div class="footer">
+    <div class="footer-top">
+        <div class="wrap">
+            <div class="section group example">
+                <div class="col_1_of_2 span_1_of_2">
+                    <ul class="f-list">
+                        <li><img src="{{asset('images/2.png')}}"><span class="f-text">Free Shipping on orders over $ 100</span><div class="clear"></div></li>
+                    </ul>
+                </div>
+                <div class="col_1_of_2 span_1_of_2">
+                    <ul class="f-list">
+                        <li><img src="{{asset('images/3.png')}}"><span class="f-text">Call us! toll free-222-555-6666 </span><div class="clear"></div></li>
+                    </ul>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-middle">
+        <div class="wrap">
+            <div class="section group example">
+                <div class="col_1_of_f_1 span_1_of_f_1">
+                    <div class="section group example">
+                        <div class="col_1_of_f_2 span_1_of_f_2">
+                            <h3>Facebook</h3>
+                            <script>(function(d, s, id) {
+                                    var js, fjs = d.getElementsByTagName(s)[0];
+                                    if (d.getElementById(id))
+                                        return;
+                                    js = d.createElement(s);
+                                    js.id = id;
+                                    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+                                    fjs.parentNode.insertBefore(js, fjs);
+                                }(document, 'script', 'facebook-jssdk'));</script>
+                            <div class="like_box">	
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                <div class="col_1_of_f_1 span_1_of_f_1">
+                    <div class="section group example">
+                        <div class="col_1_of_f_2 span_1_of_f_2">
+                            <h3>Information</h3>
+                            <ul class="f-list1">
+                               
+                                <li><a href="#">anteposuerit litterarum formas </a></li>
+                                <li><a href="#">Tduis dolore te feugait nulla</a></li>
+                            </ul>
+                        </div>
+                        <div class="col_1_of_f_2 span_1_of_f_2">
+                            <h3>Contact us</h3>
+                            <div class="company_address">
+                                <p>500 Lorem Ipsum Dolor Sit,</p>
+                                <p>22-56-2-9 Sit Amet, Lorem,</p>
+                                <p>USA</p>
+                                <p>Phone:(00) 222 666 444</p>
+                                <p>Fax: (000) 000 00 00 0</p>
+                                <p>Email: <span>mail[at]leoshop.com</span></p>
+
+                            </div>
+                            <div class="social-media">
+                                <ul>
+                                      </ul>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="wrap">
+            <div class="copy">
+                <p>© 2014 Template by <a href="http://w3layouts.com" target="_blank">w3layouts</a></p>
+            </div>
+            <div class="f-list2">
+                <ul>
+                    <li class="active"><a href="about.html">About Us</a></li> |
+                    <li><a href="delivery.html">Delivery & Returns</a></li> |
+                    <li><a href="delivery.html">Terms & Conditions</a></li> |
+                    <li><a href="contact.html">Contact Us</a></li> 
+                </ul>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

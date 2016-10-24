@@ -1,0 +1,30 @@
+reclamation:
+    pattern:  /
+    defaults: { _controller: "BestDealReclamationBundle:Reclamation:index" }
+
+reclamation_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "BestDealReclamationBundle:Reclamation:show" }
+
+reclamation_new:
+    pattern:  /new
+    defaults: { _controller: "BestDealReclamationBundle:Reclamation:new" }
+
+reclamation_create:
+    pattern:  /create
+    defaults: { _controller: "BestDealReclamationBundle:Reclamation:create" }
+    requirements: { _method: post }
+
+reclamation_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "BestDealReclamationBundle:Reclamation:edit" }
+
+reclamation_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "BestDealReclamationBundle:Reclamation:update" }
+    requirements: { _method: post|put }
+
+reclamation_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "BestDealReclamationBundle:Reclamation:delete" }
+    requirements: { _method: post|delete }

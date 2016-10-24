@@ -1,0 +1,6 @@
+map_homepage:
+    pattern:  /livraison
+    defaults: { _controller: BestDealLivraisonBundle:Default:index }
+map_valider:
+    pattern:  /valider/{adresse}
+    defaults: { _controller: BestDealLivraisonBundle:Default:add }

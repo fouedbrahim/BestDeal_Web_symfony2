@@ -1,0 +1,10 @@
+best_deal_main_homepage:
+    pattern:  /hello/
+    defaults: { _controller: BestDealMainBundle:Default:index }
+a:
+    resource: "@FOSUserBundle/Resources/config/routing/profile.xml"
+    prefix: /profile
+    
+best_deal_main_homepage:
+    pattern:  /
+    defaults: { _controller: BestDealMainBundle:Default:index }

@@ -1,0 +1,122 @@
+<?php
+
+namespace BestDeal\MainBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Client
+ *
+ * @ORM\Table(name="client", indexes={@ORM\Index(name="FK_client_recl", columns={"id_rec"}), @ORM\Index(name="FK_client_com", columns={"id_com"})})
+ * @ORM\Entity
+ */
+class Client
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="nom", type="string", length=45, nullable=true)
+     */
+    private $nom;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="prenom", type="string", length=45, nullable=true)
+     */
+    private $prenom;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="email", type="string", length=45, nullable=true)
+     */
+    private $email;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="tel", type="integer", nullable=true)
+     */
+    private $tel;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="datedenaissance", type="string", length=45, nullable=true)
+     */
+    private $datedenaissance;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="sexe", type="string", length=1, nullable=true)
+     */
+    private $sexe;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="adresse", type="string", length=45, nullable=true)
+     */
+    private $adresse;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="pseudo", type="string", length=45, nullable=true)
+     */
+    private $pseudo;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="mdp", type="string", length=45, nullable=true)
+     */
+    private $mdp;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="photo", type="string", length=1000, nullable=false)
+     */
+    private $photo;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="pays", type="string", length=45, nullable=true)
+     */
+    private $pays;
+
+    /**
+     * @var \Commande
+     *
+     * @ORM\ManyToOne(targetEntity="Commande")
+     * @ORM\JoinColumns({
+     *   @ORM\JoinColumn(name="id_com", referencedColumnName="id_commande")
+     * })
+     */
+    private $idCom;
+
+    /**
+     * @var \Reclamation
+     *
+     * @ORM\ManyToOne(targetEntity="Reclamation")
+     * @ORM\JoinColumns({
+     *   @ORM\JoinColumn(name="id_rec", referencedColumnName="id")
+     * })
+     */
+    private $idRec;
+
+
+}

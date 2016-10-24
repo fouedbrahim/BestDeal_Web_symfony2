@@ -1,0 +1,11 @@
+{%extends "::detail.html.twig"%}
+{% block price %}
+<div>
+        <a href="{{path('best_deal_panier')}}">
+        {% for deal in deals %}
+            <label class="checkbox"><input type="checkbox" name="checkbox"><i></i>{{deal.prixSolde}}</label>
+        {% endfor %}
+        </a>            
+
+</div>
+{% endblock %}

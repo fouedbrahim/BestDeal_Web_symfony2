@@ -1,0 +1,54 @@
+{% extends '::single.html.twig' %}
+{% block info %}
+
+    <a href="{{path("best_deal_detail",{"id":deal.idProduit})}}">
+        <h1 class="m_3">{{deal.nomProduit }} </h1>
+        <br><br>
+        <p class="m_5"> {{deal.prixSolde}} Dt
+            <span class="reducedfrom">
+                {{deal.prixPrimaire}} Dt
+            </span>
+            <br><br>
+        <h3>La quantité restante de ce produit est :
+            <br>
+           {{deal.qteProduit}}</h3>
+        
+    </p>
+    <div class="btn_form">
+       <div class="fb-like" data-href="https://www.facebook.com/pages/BEST-DEAL/241926435999621" data-layout="box_count" data-action="like" data-show-faces="true" data-share="true"></div>
+{% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+        <form action="http://localhost/bestdealsawsen/web/app_dev.php/produit">
+            <input type="submit" value="réserver" title="">
+        </form>
+        {% endif %}
+    </div>
+</a>           
+{% endblock%}
+{% block description %}
+
+    <a href="{{path("best_deal_desc",{"id":deal.idProduit})}}">
+        <p > 
+            {{deal.description}}
+        </p>
+
+    </a>           
+{% endblock%}
+{% block categories %}   
+
+    <select class="dropdown" tabindex="8" data-settings='{"wrapperClass":"metro"}'>
+        {% for categorie in categories %} 
+            <option value="1"><a href="{{path("best_deal_detail",{"id":deal.idProduit})}}"> {{categorie.nomCategorie}} </a>   </option>
+        {% endfor %}
+</select>
+
+{% endblock %}
+{% block listeDeroulante %}
+    
+    <a href="#"><img class="a" id="img2" src="{{asset('images/galaxy-s3.jpg')}}" alt="" rel="{{asset('images/galaxy-s3.jpg')}}" /></a>
+    <a href="#"><img class="a" id="img3" src="{{asset('images/htc-m8.jpg')}}" alt="" rel="{{asset('images/htc-m8.jpg')}}" /></a>
+    <a href="#"><img class="a" id="img4" src="{{asset('images/iphone-4.jpg')}}" alt="" rel="{{asset('images/iphone-4.jpg')}}" /></a>
+    <a href="#"><img class="a" id="img4" src="{{asset('images/iphone-5.jpg')}}" alt="" rel="{{asset('images/iphone-5.jpg')}}" /></a>
+    <a href="#"><img class="a" id="img4" src="{{asset('images/nexus-4.jpg')}}" alt="" rel="{{asset('images/nexus-4.jpg')}}" /></a>
+    <a href="#"><img class="a" id="img4" src="{{asset('images/nokia-lumia.jpg')}}" alt="" rel="{{asset('images/nokia-lumia.jpg')}}" /></a>
+    <a href="#"><img class="a" id="img4" src="{{asset('images/qtar-n9500.jpg')}}" alt="" rel="{{asset('images/qtar-n9500.jpg')}}" /></a>
+{% endblock %}

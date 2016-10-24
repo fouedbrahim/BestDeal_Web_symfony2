@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="BestDeal\MainBundle\Entity\Commande1" table="commande1">
+    <id name="id" type="integer" column="id_commande">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="idProduit" type="integer" column="id_produit" nullable="false"/>
+    <field name="idClient" type="integer" column="id_client" nullable="false"/>
+    <field name="qte" type="integer" column="qte" nullable="false"/>
+    <field name="dateRes" type="datetime" column="date_res" nullable="false"/>
+  </entity>
+</doctrine-mapping>

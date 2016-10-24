@@ -1,0 +1,35 @@
+{% extends '::single.html.twig' %}
+{% block info %}
+
+    <a href="{{path("best_deal_detail",{"id":deal.idDeal})}}">
+        <h1 class="m_3">{{deal.nomDeal }} </h1>
+        <br><br>
+        <p class="m_5"> {{deal.prixSolde}}
+            <span class="reducedfrom">
+                {{deal.prixPrimaire}}
+            </span>
+            <br><br>
+        <h3>La quantité restante de ce produit est :
+            <br>
+            {{deal.qteDeal}}</h3>
+    </p>
+    <div class="btn_form">
+        
+        <form action="">
+            <input type="submit" value="réserver" title="">
+        </form>
+        
+    </div>
+</a>           
+{% endblock%}
+{% block description %}
+
+    <a href="{{path("best_deal_desc",{"id":deal.idDeal})}}">
+        <p > 
+            {{deal.description}}
+        </p>
+
+    </a>           
+{% endblock%}
+{% block price %}
+{% endblock%}

@@ -1,0 +1,33 @@
+<center><h1>Recherche</h1></center>
+<form action="" method="POST">
+    <!--Recherche : <input name="search" type="text">-->
+    
+    <select input name="search">
+        {% for  modele in Modeles %}
+            <option name="search" onclick="{{path("esprit_park_recherche_liste_modele")}}">{{modele.Libelle}}</option>
+            {% endfor %}  
+    </select>
+    <input type="submit" value="Rechercher"/>
+
+    </form>
+
+    <center><h1>Liste des Modèles </h1></center>
+    <center><table border="2">
+            <tr>
+                <th>Id</th>
+                <th>Libelle</th>
+                <th>Pays</th>
+
+
+            </tr>
+    {% for  modele in Modeles %}
+            <tr>
+
+                <td>{{modele.id}}</td>
+                <td>{{modele.Libelle}}</td>
+                <td>{{modele.Pays}}</td>
+            </tr>
+    {% endfor %}     
+
+
+        </table>
